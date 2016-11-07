@@ -1,5 +1,5 @@
 @font-face {
-    font-family:'Dosis';/* se llama una tipografia a usar */
+    font-family:'Dosis';
     font-style: normal;
     font-weight: 400;
     src: local('Dosis Regular'), local('Dosis-Regular'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/xIAtSaglM8LZOYdGmG1JqQ.woff) format('woff');
@@ -14,33 +14,43 @@ fieldset, input, textarea, blockquote {
 body {
     background: #ffffff;
     font-family: Dosis,sans-serif;
-}
-nav li{
   
-   display: block;
-   
 }
 
-nav li a {
-    display:table;
-    height: 60px;
-    width: 60px;
-   /*background: #ccc;*/
-   
+
+
+nav li{
+    
+    display: block;
 }
-nav li a span {
-    display: table-cell;
+
+nav li a{
+    padding-left: 60px;
+    height: 70px;
+    width: 70px;
+    display:table;
+    
+    
+}
+
+nav li a span{
+    text-transform: uppercase;
+    display:table-cell;
     vertical-align: middle;
     background: #000;
     opacity: 0;
     transition: all 1s;
-     
+    
 }
 
+nav li a:hover{
+    
+    padding-left: 125px;
+}
 
-nav li a :hover {
-     padding-left: 60px;
-     opacity: 1;
+nav li a:hover span{
+    
+    opacity: 1;
 }
 
 nav li:nth-child(1) a{background: #7cc2fd; color: #7cc2fd;}
