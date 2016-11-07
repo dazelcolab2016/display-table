@@ -16,31 +16,36 @@ body {
     font-family: Dosis,sans-serif;
 }
 nav li{
-    /* display: block;*/
+  
+   display: block;
+   
 }
 
 nav li a {
     display:table;
-    padding-left: 60px;
     height: 60px;
-    width: 60;
-    background: #ccf;
+    width: 60px;
+   /*background: #ccc;*/
    
 }
 nav li a span {
     display: table-cell;
-    /*vertical-align: middle;*/
+    vertical-align: middle;
+    background: #000;
+    opacity: 0;
+    transition: all 1s;
+     
 }
 
-nav li a :hover span{
-    
+
+nav li a :hover {
+     padding-left: 60px;
+     opacity: 1;
 }
 
 nav li:nth-child(1) a{background: #7cc2fd; color: #7cc2fd;}
-    
-nav li:nth-child(2) a{background: #7cc2fd; color: #7cc2fd;}
-nav li:nth-child(3) a{background: #7cc2fd; color: #7cc2fd;}
-nav li:nth-child(4) a{background: #7cc2fd; color: #7cc2fd;}
+nav li:nth-child(2) a{background: #BDFFEA; color: #BDFFEA;}
+nav li:nth-child(3) a{background: #ffcb82; color: #ffcb82;}
+nav li:nth-child(4) a{background: #FFC8F2; color: #FFC8F2;}
 
 
-/* completa tu codigo aqui */
